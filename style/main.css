@@ -1,0 +1,109 @@
+:root {
+    --amarelo: #FFA726;
+    --preto: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* elementos base */
+
+body {
+    font-family: 'Arial','Times New Roman', Times, serif;
+    background: var(--preto);
+    color: white;
+}
+
+header .container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--amarelo);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* manga principal */
+
+.manga-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/capa.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    -webkit-box-shadow: inset 0px -27px 20px -10px rgba(20,20,20,1);
+    -moz-box-shadow: inset 0px -27px 20px -10px rgba(20,20,20,1);
+    box-shadow: inset 0px -27px 20px -10px rgba(20,20,20,1);
+    border-bottom: var(--preto) ;
+}
+.manga-principal .container {
+    margin-left: 20px;
+    width: 80%;
+}
+
+.manga-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.manga-principal .titulo {
+    margin-top: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.manga-principal .botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 3px;
+}
+
+.manga-principal .botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.manga-principal .botao i {
+    margin-right: 8px;
+}
+
+.box-manga {
+    margin-top: 3%;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-mangas {
+    margin-top: 5px;
+}
